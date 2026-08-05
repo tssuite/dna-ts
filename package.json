@@ -16,10 +16,13 @@
     ".gg/dna.json"
   ],
   "scripts": {
+    "prebuild": "pnpm run test",
+    "build": "tsc",
     "test": "vitest run && pnpm run lint",
     "lint": "eslint",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
     "base_dna": "link:../../ggsuite/base_dna"
