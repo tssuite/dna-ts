@@ -1,0 +1,38 @@
+// @license
+// Copyright (c) ggsuite
+//
+// Use of this source code is governed by terms that can be
+// found in the LICENSE file in the root of this package.
+
+import { NormalizedPackageJson, readPackage } from 'read-pkg';
+import { beforeAll, describe, expect, it } from 'vitest';
+
+// A DNA package ships content, not code: its payload is the `dna/`
+// folder that gg_dna instantiates into consumers. These checks keep the
+// manifest honest about that.
+describe('package.json', () => {
+  let json: NormalizedPackageJson;
+
+  beforeAll(async () => {
+    json = await readPackage();
+  });
+
+  it('ships the dna folder and its config to consumers', () => {
+    expect(json.files).toContain('dna');
+    expect(json.files).toContain('.gg/dna.json');
+  });
+
+  it('declares no build output — there is nothing to compile', () => {
+    expect(json.main).toBeUndefined();
+    expect(json.types).toBeUndefined();
+    expect(json.files).not.toContain('dist');
+  });
+
+  it('depends on the DNA it builds upon', () => {
+    expect(Object.keys(json.dependencies ?? {})).toContain('base_dna');
+  });
+
+  it('is an ES module package', () => {
+    expect(json.type).toBe('module');
+  });
+});

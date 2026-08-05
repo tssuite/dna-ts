@@ -1,6 +1,5 @@
-// Placed by `gg_dna init` — instantiates and verifies this project's DNA
-// on every test run. The logic lives in the @tssuite/gg-dna
-// dev-dependency and is updated through normal dependency updates.
+// Placed by the dna-ts DNA — instantiates and verifies this project's
+// DNA on every test run.
 
 import { runDnaTest } from '@tssuite/gg-dna';
 import { test } from 'vitest';

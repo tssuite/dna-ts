@@ -1,9 +1,7 @@
 {
-
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-
 
   "javascript.preferences.quoteStyle": "single",
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -12,7 +10,6 @@
   "typescript.tsserver.watchOptions": "vscode",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "typescript.referencesCodeLens.enabled": true,
-
 
   "eslint.codeActionsOnSave.mode": "all",
   "eslint.run": "onType",
@@ -23,7 +20,6 @@
     "typescriptreact",
     "html"
   ],
-
 
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -37,7 +33,6 @@
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
 
   "importSorter.generalConfiguration.sortOnBeforeSave": true,
   "importSorter.importStringConfiguration.maximumNumberOfImportExpressionsPerLine.count": 100,
