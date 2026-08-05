@@ -1,0 +1,125 @@
+{
+  "version": 5,
+  "instances": [
+    {
+      "path": ".DS_Store",
+      "hash": "0xfabbcfd5a0a3e169"
+    },
+    {
+      "path": ".claude/skills/init/SKILL.md",
+      "hash": "0x0e505fab50995a94"
+    },
+    {
+      "path": ".claude/skills/new-project/SKILL.md",
+      "hash": "0xf863e80c14b5e980"
+    },
+    {
+      "path": ".claude/skills/new-ticket/SKILL.md",
+      "hash": "0xad3fcff3720d05a5"
+    },
+    {
+      "path": ".claude/skills/review/SKILL.md",
+      "hash": "0xf228fda8b6f948e2"
+    },
+    {
+      "path": ".gitattributes",
+      "hash": "0x339250e2cf083de9"
+    },
+    {
+      "path": ".prettierignore",
+      "hash": "0xb01d022007df4f11"
+    },
+    {
+      "path": ".prettierrc",
+      "hash": "0xf2be2549d1b502ae"
+    },
+    {
+      "path": ".vscode/extensions.json",
+      "hash": "0x891853a693e76578"
+    },
+    {
+      "path": ".vscode/settings.json",
+      "hash": "0xe12eb221591a0821"
+    },
+    {
+      "path": ".vscode/typescript.code-snippets",
+      "hash": "0x92e7a653dce66d7f"
+    },
+    {
+      "path": "LICENSE",
+      "hash": "0x58ed9cf06c6568b4"
+    },
+    {
+      "path": "doc/01Install/01Vscode.md",
+      "hash": "0xa0da6a6877bb94c2"
+    },
+    {
+      "path": "doc/01Install/02BrewOnMac.md",
+      "hash": "0x3ff81d12cdc6150f"
+    },
+    {
+      "path": "doc/01Install/03aNodeMac.md",
+      "hash": "0x4f383295e3a43359"
+    },
+    {
+      "path": "doc/01Install/03bNodeWin.md",
+      "hash": "0x782756eb0ff83a0d"
+    },
+    {
+      "path": "doc/01Install/04Corepack.md",
+      "hash": "0x607522ddd35d5d36"
+    },
+    {
+      "path": "doc/01Install/05GithubCli.md",
+      "hash": "0x2a3ec36184ebcf41"
+    },
+    {
+      "path": "doc/01Install/06Flutter.md",
+      "hash": "0xb295179e5d6a8cb9"
+    },
+    {
+      "path": "doc/01Install/07Gg.md",
+      "hash": "0x637f7197356a4128"
+    },
+    {
+      "path": "doc/01Install/08GgWorkspace.md",
+      "hash": "0x846766914bb56a84"
+    },
+    {
+      "path": "doc/02Develop/develop.md",
+      "hash": "0xb2ea54f44facee4b"
+    },
+    {
+      "path": "doc/conventions/codeConventions.md",
+      "hash": "0x2bc3cb23d1990d85"
+    },
+    {
+      "path": "doc/conventions/documentationConventions.md",
+      "hash": "0xea7d0fc52ab5f6f3"
+    },
+    {
+      "path": "doc/conventions/testConventions.md",
+      "hash": "0x96732da0cee8dfac"
+    },
+    {
+      "path": "doc/guides/claudeCode.md",
+      "hash": "0xe18e86905c716287"
+    },
+    {
+      "path": "doc/guides/dna.md",
+      "hash": "0x85262c30aec4b3f2"
+    },
+    {
+      "path": "scripts/README.md",
+      "hash": "0x18eb11ecbaaff8e8"
+    },
+    {
+      "path": "test/.DS_Store",
+      "hash": "0x4318446da765094d"
+    },
+    {
+      "path": "test/dna/dna.spec.ts",
+      "hash": "0x60a14efc998702a5"
+    }
+  ]
+}
