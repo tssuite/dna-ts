@@ -15,7 +15,7 @@
       "path": "../../ggsuite/base_dna",
       "resolvedVersion": null,
       "via": null,
-      "hash": "0x093aab2b76a91195"
+      "hash": "0xb7468d8c77064595"
     },
     {
       "name": "self",
@@ -23,7 +23,7 @@
       "path": "dna",
       "resolvedVersion": null,
       "via": null,
-      "hash": "0x8af40ba327950a8c"
+      "hash": "0x62624c895c38da22"
     }
   ],
   "claude": {
