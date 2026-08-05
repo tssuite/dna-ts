@@ -50,64 +50,64 @@
       "hash": "0x58ed9cf06c6568b4"
     },
     {
-      "path": "doc/01Install/01Vscode.md",
+      "path": "doc/01_install/01_vscode.md",
       "hash": "0xa0da6a6877bb94c2"
     },
     {
-      "path": "doc/01Install/02BrewOnMac.md",
+      "path": "doc/01_install/02_brew_on_mac.md",
       "hash": "0x3ff81d12cdc6150f"
     },
     {
-      "path": "doc/01Install/03aNodeMac.md",
+      "path": "doc/01_install/03a_node_mac.md",
       "hash": "0x4f383295e3a43359"
     },
     {
-      "path": "doc/01Install/03bNodeWin.md",
+      "path": "doc/01_install/03b_node_win.md",
       "hash": "0x782756eb0ff83a0d"
     },
     {
-      "path": "doc/01Install/04Corepack.md",
+      "path": "doc/01_install/04_corepack.md",
       "hash": "0x607522ddd35d5d36"
     },
     {
-      "path": "doc/01Install/05GithubCli.md",
+      "path": "doc/01_install/05_github_cli.md",
       "hash": "0x2a3ec36184ebcf41"
     },
     {
-      "path": "doc/01Install/06Flutter.md",
+      "path": "doc/01_install/06_flutter.md",
       "hash": "0xb295179e5d6a8cb9"
     },
     {
-      "path": "doc/01Install/07Gg.md",
+      "path": "doc/01_install/07_gg.md",
       "hash": "0x637f7197356a4128"
     },
     {
-      "path": "doc/01Install/08GgWorkspace.md",
+      "path": "doc/01_install/08_gg_workspace.md",
       "hash": "0x846766914bb56a84"
     },
     {
-      "path": "doc/02Develop/develop.md",
+      "path": "doc/02_develop/develop.md",
       "hash": "0x41faee23e2e7ee3c"
     },
     {
-      "path": "doc/conventions/codeConventions.md",
-      "hash": "0x2bc3cb23d1990d85"
+      "path": "doc/conventions/code_conventions.md",
+      "hash": "0x6a8d57d7867e43bc"
     },
     {
-      "path": "doc/conventions/documentationConventions.md",
-      "hash": "0xea7d0fc52ab5f6f3"
+      "path": "doc/conventions/documentation_conventions.md",
+      "hash": "0xa87793664b406de4"
     },
     {
-      "path": "doc/conventions/testConventions.md",
-      "hash": "0x96732da0cee8dfac"
+      "path": "doc/conventions/test_conventions.md",
+      "hash": "0xe7ca8d4c89f66d63"
     },
     {
-      "path": "doc/guides/claudeCode.md",
+      "path": "doc/guides/claude_code.md",
       "hash": "0xe18e86905c716287"
     },
     {
       "path": "doc/guides/dna.md",
-      "hash": "0x85262c30aec4b3f2"
+      "hash": "0x0ce51340c6d0e0d8"
     },
     {
       "path": "scripts/README.md",
