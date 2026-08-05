@@ -23,7 +23,9 @@
     "**/*.{html,css,scss}"
   ],
   "yaml.format.enable": false,
-  "editor.rulers": [80],
+  "editor.rulers": [
+    80
+  ],
   "editor.wordWrapColumn": 80,
   "editor.formatOnType": true,
   "editor.detectIndentation": false,
@@ -90,7 +92,9 @@
   },
   "markdownlint.run": "onSave",
   "markdown.extension.toc.omittedFromToc": {
-    "README.md": ["## Content"]
+    "README.md": [
+      "## Content"
+    ]
   },
   "markdown.extension.toc.levels": "2..3",
   "[svg]": {
@@ -104,12 +108,20 @@
   "git.autoRepositoryDetection": false,
   "git.enableSmartCommit": true,
   "git.autofetch": true,
-  "gitlens.blame.highlight.locations": ["gutter", "overview"],
+  "gitlens.blame.highlight.locations": [
+    "gutter",
+    "overview"
+  ],
   "git.openRepositoryInParentFolders": "never",
   "git.confirmSync": false,
   "security.workspace.trust.untrustedFiles": "open",
   "references.preferredLocation": "view",
-  "psi-header.variables": [["author", "ggsuite"]],
+  "psi-header.variables": [
+    [
+      "author",
+      "ggsuite"
+    ]
+  ],
   "psi-header.templates": [
     {
       "language": "*",

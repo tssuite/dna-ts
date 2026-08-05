@@ -3,7 +3,7 @@
   "instances": [
     {
       "path": ".DS_Store",
-      "hash": "0xfabbcfd5a0a3e169"
+      "hash": "0x18cf3f633d23c4a5"
     },
     {
       "path": ".claude/skills/init/SKILL.md",
@@ -19,7 +19,7 @@
     },
     {
       "path": ".claude/skills/review/SKILL.md",
-      "hash": "0xf228fda8b6f948e2"
+      "hash": "0xfe65b7f7089124d6"
     },
     {
       "path": ".gitattributes",
@@ -43,7 +43,7 @@
     },
     {
       "path": ".vscode/typescript.code-snippets",
-      "hash": "0x92e7a653dce66d7f"
+      "hash": "0x22acebc5604adc85"
     },
     {
       "path": "LICENSE",
