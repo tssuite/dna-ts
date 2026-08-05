@@ -1,0 +1,91 @@
+{
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+
+  "javascript.preferences.quoteStyle": "single",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.referencesCodeLens.enabled": true,
+
+  "typescript.tsserver.watchOptions": "vscode",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.referencesCodeLens.enabled": true,
+
+
+  "eslint.codeActionsOnSave.mode": "all",
+  "eslint.run": "onType",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html"
+  ],
+
+
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+
+  "importSorter.generalConfiguration.sortOnBeforeSave": true,
+  "importSorter.importStringConfiguration.maximumNumberOfImportExpressionsPerLine.count": 100,
+  "importSorter.importStringConfiguration.numberOfEmptyLinesAfterAllImports": 2,
+  "importSorter.importStringConfiguration.tabSize": 2,
+  "importSorter.sortConfiguration.customOrderingRules.defaultOrderLevel": 15,
+  "importSorter.sortConfiguration.removeUnusedDefaultImports": true,
+  "importSorter.sortConfiguration.removeUnusedImports": true,
+  "importSorter.sortConfiguration.customOrderingRules.rules": [
+    {
+      "regex": "^.*zone.js",
+      "orderLevel": 5
+    },
+    {
+      "regex": "^.*[@]angular",
+      "orderLevel": 10
+    },
+    {
+      "regex": "^.*tinymce/tinymce.min",
+      "orderLevel": 14
+    },
+    {
+      "regex": "^.*tinymce",
+      "orderLevel": 15
+    },
+    {
+      "regex": "^\\w+",
+      "orderLevel": 20
+    },
+    {
+      "regex": "^.*[@]inl",
+      "orderLevel": 60
+    },
+    {
+      "regex": "^.*[@]sy",
+      "orderLevel": 65
+    },
+    {
+      "regex": "^\\.\\./\\.\\./",
+      "orderLevel": 70
+    },
+    {
+      "regex": "^\\.\\.",
+      "orderLevel": 80
+    },
+    {
+      "regex": "^\\.",
+      "orderLevel": 90
+    }
+  ]
+}

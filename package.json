@@ -1,0 +1,28 @@
+{
+  "name": "dna-ts",
+  "version": "1.0.0",
+  "description": "DNA for all of our TypeScript projects - TS-specific configs and docs on top of base_dna, inherited via gg_dna.",
+  "homepage": "https://github.com/tssuite/dna-ts",
+  "bugs": "https://github.com/tssuite/dna-ts/issues",
+  "private": false,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tssuite/dna-ts.git"
+  },
+  "type": "module",
+  "files": [
+    "dna",
+    ".gg/dna.json"
+  ],
+  "scripts": {
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "base_dna": "link:../../ggsuite/base_dna"
+  },
+  "devDependencies": {
+    "@tssuite/gg-dna": "link:../gg_dna-js-bridge",
+    "vitest": "^4.1.8"
+  }
+}
