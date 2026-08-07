@@ -1,0 +1,10 @@
+{
+  // dna-ts is a DNA package: dna/ is authored by hand and is the last
+  // layer of its own instantiation. Parent: base_dna.
+  "role": "dna",
+  "order": ["base_dna"],
+  "dependencies": {
+    // Local workspace override — resolved from the registry in consumers.
+    "base_dna": { "path": "../../ggsuite/base_dna" }
+  }
+}

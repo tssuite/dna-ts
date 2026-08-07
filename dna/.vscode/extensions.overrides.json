@@ -1,0 +1,13 @@
+{
+  "recommendations+": [
+    "antfu.vite",
+    "christian-kohler.npm-intellisense",
+    "dbaeumer.vscode-eslint",
+    "deinsoftware.vitest-snippets",
+    "mike-co.import-sorter",
+    "pmneo.tsimporter",
+    "ritwickdey.liveserver",
+    "stylelint.vscode-stylelint",
+    "vitest.explorer"
+  ]
+}

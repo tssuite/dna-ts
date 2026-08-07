@@ -1,0 +1,49 @@
+{
+  "name": "dna-ts",
+  "version": "1.0.0",
+  "description": "DNA for all of our TypeScript projects - TS-specific configs and docs on top of base_dna, inherited via gg_dna.",
+  "homepage": "https://github.com/tssuite/dna-ts",
+  "bugs": "https://github.com/tssuite/dna-ts/issues",
+  "private": false,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tssuite/dna-ts.git"
+  },
+  "type": "module",
+  "files": [
+    "dna",
+    ".gg/dna.json"
+  ],
+  "scripts": {
+    "prebuild": "pnpm run test",
+    "build": "tsc",
+    "test": "vitest run && pnpm run lint",
+    "lint": "eslint",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepublishOnly": "pnpm run build"
+  },
+  "dependencies": {
+    "base_dna": "^1.0.0"
+  },
+  "devDependencies": {
+    "@tssuite/gg-dna": "^1.0.0",
+    "@types/node": "^26.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.62.1",
+    "@typescript-eslint/parser": "^8.62.1",
+    "eslint": "^10.6.0",
+    "eslint-plugin-jsdoc": "^63.0.10",
+    "eslint-plugin-tsdoc": "^0.5.2",
+    "globals": "^17.7.0",
+    "prettier": "^3.6.2",
+    "read-pkg": "^10.1.0",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.62.1",
+    "vite": "^8.1.2",
+    "vitest": "^4.1.8"
+  },
+  "engines": {
+    "node": ">=22.14.0"
+  }
+}
