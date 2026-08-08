@@ -264,15 +264,6 @@
   "typescript.tsserver.watchOptions": "vscode",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "typescript.referencesCodeLens.enabled": true,
-  "eslint.codeActionsOnSave.mode": "all",
-  "eslint.run": "onType",
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "html"
-  ],
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -285,6 +276,15 @@
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "eslint.codeActionsOnSave.mode": "all",
+  "eslint.run": "onType",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html"
+  ],
   "importSorter.generalConfiguration.sortOnBeforeSave": true,
   "importSorter.importStringConfiguration.maximumNumberOfImportExpressionsPerLine.count": 100,
   "importSorter.importStringConfiguration.numberOfEmptyLinesAfterAllImports": 2,
