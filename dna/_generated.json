@@ -23,7 +23,7 @@
       "ecosystem": null,
       "resolvedVersion": null,
       "via": null,
-      "hash": "0x4ef25eef422f582f"
+      "hash": "0xd6d897cf0b81142b"
     }
   ],
   "claude": {
@@ -132,6 +132,10 @@
     {
       "path": "scripts/README.md",
       "hash": "0x18eb11ecbaaff8e8"
+    },
+    {
+      "path": "test/dna/dna.spec.ts",
+      "hash": "0x9f8316a6793f0359"
     }
   ]
 }
