@@ -1,0 +1,10 @@
+# This repository holds no Dart code of its own. The file exists so the
+# Dart analysis server stops walking into node_modules: pnpm links
+# packages in as live symlinks, so a linked Dart package (the gg_dna
+# WebAssembly bridge) shows up here with its whole source tree. It is
+# analyzed in its own repository against its own dependencies; from here
+# it cannot resolve, and every one of its files turns into a phantom
+# error in the Problems panel.
+analyzer:
+  exclude:
+    - node_modules/**

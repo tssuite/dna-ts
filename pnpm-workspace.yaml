@@ -1,0 +1,15 @@
+# Created by gg_localize_refs. The overrides section redirects
+# the dependencies of package.json to the sibling checkouts of
+# this workspace without touching their published constraints.
+# change-refs-to-pub-dev removes the section again.
+# Supply-chain guard: a freshly published third-party release has to age
+# before we install it, so a compromised package has a window to be found
+# and pulled. The value is in minutes.
+minimumReleaseAge: 1440
+
+# Our own packages are published and consumed within the same workspace:
+# a release has to be installable the moment it is out, so the age above
+# does not apply to them.
+minimumReleaseAgeExclude:
+  - '@tssuite/*'
+  - '@carat-ds/*'
