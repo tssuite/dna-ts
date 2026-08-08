@@ -5,20 +5,20 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  base_dna: link:../../ggsuite/base_dna
-  '@tssuite/gg-dna': link:../gg_dna-js-bridge
+  '@tssuite/base-dna': link:../../ggsuite/base_dna
+  '@tssuite/gg_dna-js': link:../gg_dna-js
 
 importers:
 
   .:
     dependencies:
-      base_dna:
+      '@tssuite/base-dna':
         specifier: link:../../ggsuite/base_dna
         version: link:../../ggsuite/base_dna
     devDependencies:
-      '@tssuite/gg-dna':
-        specifier: link:../gg_dna-js-bridge
-        version: link:../gg_dna-js-bridge
+      '@tssuite/gg_dna-js':
+        specifier: link:../gg_dna-js
+        version: link:../gg_dna-js
       '@types/node':
         specifier: ^26.1.0
         version: 26.1.2

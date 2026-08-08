@@ -36,4 +36,3 @@ Thumbs.db
 # gg tooling state — keep the DNA config, drop the rest
 .gg/*
 !.gg/gg.json
-!.gg/dna.json

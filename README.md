@@ -19,13 +19,13 @@ TypeScript-specific layer, inherited via
 ## Usage
 
 ```bash
-pnpm add -D dna-ts @tssuite/gg-dna
+pnpm add -D dna-ts @tssuite/gg_dna-js
 gg_dna init
 ```
 
 The placed spec instantiates and verifies the DNA on every test run
 (base_dna is pulled in transitively). The engine runs via
-`@tssuite/gg-dna` — the gg_dna engine compiled to WebAssembly.
+`@tssuite/gg_dna-js` — the gg_dna engine compiled to WebAssembly.
 
 ## Development
 

@@ -13,7 +13,8 @@
   "type": "module",
   "files": [
     "dna",
-    ".gg/dna.json"
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "prebuild": "pnpm run test",
@@ -25,10 +26,10 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "base_dna": "^1.0.0"
+    "@tssuite/base-dna": "^1.0.1"
   },
   "devDependencies": {
-    "@tssuite/gg-dna": "^1.0.0",
+    "@tssuite/gg_dna-js": "^2.0.0",
     "@types/node": "^26.1.0",
     "@typescript-eslint/eslint-plugin": "^8.62.1",
     "@typescript-eslint/parser": "^8.62.1",

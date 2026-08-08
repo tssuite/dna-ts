@@ -17,9 +17,11 @@ describe('package.json', () => {
     json = await readPackage();
   });
 
-  it('ships the dna folder and its config to consumers', () => {
+  it('ships the dna folder to consumers', () => {
+    // The configuration travels inside dna/_dna.json — `pub` drops every
+    // path with a leading dot, so nothing below `.gg/` ever arrives.
     expect(json.files).toContain('dna');
-    expect(json.files).toContain('.gg/dna.json');
+    expect(json.files).not.toContain('.gg/dna.json');
   });
 
   it('declares no build output — there is nothing to compile', () => {
@@ -29,7 +31,9 @@ describe('package.json', () => {
   });
 
   it('depends on the DNA it builds upon', () => {
-    expect(Object.keys(json.dependencies ?? {})).toContain('base_dna');
+    expect(Object.keys(json.dependencies ?? {})).toContain(
+      '@tssuite/base-dna',
+    );
   });
 
   it('is an ES module package', () => {

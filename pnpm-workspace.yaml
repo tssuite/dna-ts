@@ -3,5 +3,5 @@
 # this workspace without touching their published constraints.
 # change-refs-to-pub-dev removes the section again.
 overrides:
-  base_dna: link:../../ggsuite/base_dna
-  "@tssuite\/gg-dna": link:../gg_dna-js-bridge
+  "@tssuite\/base-dna": link:../../ggsuite/base_dna
+  "@tssuite\/gg_dna-js": link:../gg_dna-js

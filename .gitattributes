@@ -2,3 +2,4 @@
 CHANGELOG.md merge=union
 .gg/gg.json merge=ours
 pnpm-lock.yaml merge=ours
+dna/_generated.json merge=ours
