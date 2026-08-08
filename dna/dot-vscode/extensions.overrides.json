@@ -1,0 +1,15 @@
+{
+  // TypeScript/Vite tooling of all our TypeScript projects — joined into
+  // the recommendations inherited from base-dna.
+  "recommendations+": [
+    "antfu.vite",
+    "christian-kohler.npm-intellisense",
+    "dbaeumer.vscode-eslint",
+    "deinsoftware.vitest-snippets",
+    "mike-co.import-sorter",
+    "pmneo.tsimporter",
+    "ritwickdey.liveserver",
+    "stylelint.vscode-stylelint",
+    "vitest.explorer"
+  ]
+}
