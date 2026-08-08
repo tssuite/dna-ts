@@ -26,15 +26,15 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "@tssuite/base-dna": "^1.0.1"
+    "@tssuite/base-dna": "link:../../ggsuite/base_dna"
   },
   "devDependencies": {
-    "@tssuite/gg_dna-js": "^1.0.1",
+    "@tssuite/gg_dna-js": "link:../gg_dna-js",
     "@types/node": "^26.2.0",
     "@typescript-eslint/eslint-plugin": "^8.66.0",
     "@typescript-eslint/parser": "^8.66.0",
     "eslint": "^10.8.1",
-    "eslint-plugin-jsdoc": "^63.3.3",
+    "eslint-plugin-jsdoc": "^64.0.0",
     "eslint-plugin-tsdoc": "^0.5.2",
     "globals": "^17.9.0",
     "prettier": "^3.9.6",
