@@ -4,17 +4,21 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  '@tssuite/base-dna': link:../../ggsuite/base_dna
+  '@tssuite/gg_dna-js': link:../gg_dna-js
+
 importers:
 
   .:
     dependencies:
       '@tssuite/base-dna':
-        specifier: ^1.0.2
-        version: 1.0.2
+        specifier: link:../../ggsuite/base_dna
+        version: link:../../ggsuite/base_dna
     devDependencies:
       '@tssuite/gg_dna-js':
-        specifier: ^1.0.1
-        version: 1.0.1
+        specifier: link:../gg_dna-js
+        version: link:../gg_dna-js
       '@types/node':
         specifier: ^26.1.0
         version: 26.1.2
@@ -234,14 +238,6 @@ packages:
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
-
-  '@tssuite/base-dna@1.0.2':
-    resolution: {integrity: sha512-gA1DdYCs9WHP/tzRc/u6r8lHtxPTH0XmbItyepjDQ4Nry5vfPOI18l7XYaV2xgB8+3ajoJ7htLk9eyBqKpR1Ow==}
-    engines: {node: '>=22'}
-
-  '@tssuite/gg_dna-js@1.0.1':
-    resolution: {integrity: sha512-/HiDTZyaUKLLnNXTCJjnDldcrI0a+AD8d8/os9x0BwfUZeEp8rqif/uml4CYccIYHiill4dA7n298SoM7e2GBg==}
-    engines: {node: '>=22'}
 
   '@types/chai@5.2.3':
     resolution: {integrity: sha512-Mw558oeA9fFbv65/y4mHtXDs9bPnFMZAL/jxdPFUpOHHIXX91mcgEHbS5Lahr+pwZFR8A7GQleRWeI6cGFC2UA==}
@@ -1176,10 +1172,6 @@ snapshots:
   '@sindresorhus/base62@1.0.0': {}
 
   '@standard-schema/spec@1.1.0': {}
-
-  '@tssuite/base-dna@1.0.2': {}
-
-  '@tssuite/gg_dna-js@1.0.1': {}
 
   '@types/chai@5.2.3':
     dependencies:
