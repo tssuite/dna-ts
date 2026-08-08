@@ -5,3 +5,15 @@
 overrides:
   "@tssuite\/base-dna": link:../../ggsuite/base_dna
   "@tssuite\/gg_dna-js": link:../gg_dna-js
+
+# Supply-chain guard: a freshly published third-party release has to age
+# before we install it, so a compromised package has a window to be found
+# and pulled. The value is in minutes.
+minimumReleaseAge: 1440
+
+# Our own packages are published and consumed within the same workspace:
+# a release has to be installable the moment it is out, so the age above
+# does not apply to them.
+minimumReleaseAgeExclude:
+  - '@tssuite/*'
+  - '@carat-ds/*'
