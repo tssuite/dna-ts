@@ -5,6 +5,9 @@
     "**/build": true,
     "**/node_modules": true
   },
+  "files.associations": {
+    "**/dna/_dna.json": "jsonc"
+  },
   "editor.tabSize": 2,
   "editor.codeActionsOnSave": {
     "source.fixAll": "always",

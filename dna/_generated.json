@@ -15,7 +15,7 @@
       "ecosystem": "node",
       "resolvedVersion": "1.0.1",
       "via": null,
-      "hash": "0x0974141d79571f3e"
+      "hash": "0x73556e1931ad8f24"
     },
     {
       "name": "self",
@@ -63,7 +63,7 @@
     },
     {
       "path": ".vscode/settings.json",
-      "hash": "0xe12eb221591a0821"
+      "hash": "0x4285f3fb96a8e8db"
     },
     {
       "path": ".vscode/typescript.code-snippets",
