@@ -5,16 +5,21 @@ The DNA for all of our TypeScript projects. Builds on
 TypeScript-specific layer, inherited via
 [gg_dna](https://github.com/ggsuite/gg_dna):
 
-- `dna/.vscode/settings.overrides.json` — TS/ESLint editor settings
+- `dna/dot-vscode/settings.overrides.json` — TS/ESLint editor settings
   merged into the base settings
-- `dna/.vscode/extensions.overrides.json` — TS extension
+- `dna/dot-vscode/extensions.overrides.json` — TS extension
   recommendations (array join)
-- `dna/.vscode/typescript.code-snippets` — workspace snippets (license
+- `dna/dot-vscode/typescript.code-snippets` — workspace snippets (license
   header, test skeleton)
-- `dna/doc/develop.overrides.md` — pnpm commands for the ticket
-  workflow
+- `dna/dot-claude/skills/review/SKILL.md` — the review skill with the
+  kebab-case convention filenames a TypeScript project instantiates
 - `dna/test/dna/dna.spec.ts` — the DNA wrapper spec shipped to TS
   consumers (instantiated as `test/dna/dna.spec.ts`)
+
+Dotfiles carry a `dot-` prefix inside `dna/` and lose it when
+instantiated (`dna/dot-vscode/…` → `.vscode/…`). Without the escape
+`dart pub publish` drops them, and the layer would reach pub consumers
+incomplete.
 
 ## Usage
 
@@ -29,8 +34,9 @@ The placed spec instantiates and verifies the DNA on every test run
 
 ## Development
 
-`role: "dna"`: the `dna/` folder is authored by hand. The repo
-instantiates its own DNA — run `pnpm test` after changes; commit first
-(a file the DNA would overwrite must not carry uncommitted work). The
-workspace override in `.gg/dna.json` points at the local base_dna
-checkout during development.
+`role: "dna"` in `dna/_dna.json`: the `dna/` folder is authored by hand.
+The repo instantiates its own DNA — run `pnpm test` after changes; commit
+first (a file the DNA would overwrite must not carry uncommitted work).
+During development `gg_localize_refs` points the `@tssuite/base-dna`
+dependency at the local base_dna checkout; the DNA config itself never
+holds paths.
