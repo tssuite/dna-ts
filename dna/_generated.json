@@ -23,7 +23,7 @@
       "ecosystem": null,
       "resolvedVersion": null,
       "via": null,
-      "hash": "0xae3f139773cddacf"
+      "hash": "0x9ef69aafa5b1b9c6"
     }
   ],
   "claude": {
@@ -47,7 +47,7 @@
     },
     {
       "path": ".claude/skills/review/SKILL.md",
-      "hash": "0xfe65b7f7089124d6"
+      "hash": "0xcaae23bdd3bb1520"
     },
     {
       "path": ".prettierignore",

@@ -141,7 +141,7 @@ update command) or skip with a note in the report.
     then rerun.
 - **Coverage**: if the test output reports a coverage value and it is
   below **100 %**, record that as a blocker (see
-  `doc/conventions/testConventions.md`). Locate the uncovered lines and
+  `doc/conventions/test-conventions.md`). Locate the uncovered lines and
   treat them as a finding in phase 2.
 
 ### 1.4 Phase 1 wrap-up
@@ -175,9 +175,9 @@ Procedure per changed file:
 
 Load and reference explicitly:
 
-- `doc/conventions/codeConventions.md`
-- `doc/conventions/testConventions.md`
-- `doc/conventions/documentationConventions.md`
+- `doc/conventions/code-conventions.md`
+- `doc/conventions/test-conventions.md`
+- `doc/conventions/documentation-conventions.md`
 
 Every convention violation is backed by a quote from the convention
 file — that protects against taste-based findings.
@@ -205,7 +205,7 @@ file — that protects against taste-based findings.
   describes the old one? Exceptions documented that are no longer
   thrown?
 - **Completeness**: public API without doc comments → blocker (per
-  `documentationConventions.md`).
+  `documentation-conventions.md`).
 - **README/CHANGELOG**: if public behavior changed, README/CHANGELOG
   should reflect it. Check whether they were changed in the diff.
 
@@ -279,7 +279,7 @@ Format:
 
 #### B1. <short title> — `<file>:<line>`
 
-**Convention/axis**: <codeConventions.md §… | Performance | Security | …>
+**Convention/axis**: <code-conventions.md §… | Performance | Security | …>
 **Finding**: <one to three sentences>
 **Patch**:
 
