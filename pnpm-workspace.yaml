@@ -13,6 +13,3 @@ minimumReleaseAge: 1440
 minimumReleaseAgeExclude:
   - '@tssuite/*'
   - '@carat-ds/*'
-overrides:
-  "@tssuite\/base-dna": link:../../ggsuite/base_dna
-  "@tssuite\/gg_dna-js": link:../gg_dna-js
