@@ -1,27 +1,11 @@
 {
-  "version": 5,
-  "layers": [
-    {
-      "name": "base",
-      "package": "gg_dna",
-      "path": null,
-      "resolvedVersion": "4.0.0",
-      "via": null,
-      "hash": "0x772332bb29b2f2d6"
-    },
-    {
-      "name": "@tssuite/base-dna",
-      "package": "@tssuite/base-dna",
-      "path": null,
-      "resolvedVersion": "1.0.2",
-      "via": null,
-      "hash": "0x5d3d366d8eb4b10d"
-    }
-  ],
-  "claude": {
-    "claudeMdInclude": null
-  },
-  "baseVersion": "4.0.0",
-  "baseHash": "0x772332bb29b2f2d6",
-  "hash": "0x0cbd0c56b1e1ae9e"
+  // dna-ts is a DNA package: dna/ is authored by hand and is the last
+  // layer of its own instantiation. "role": "dna" is also what makes this
+  // package usable as a layer at all — a dna/ folder alone does not.
+  "version": 1,
+  "role": "dna",
+
+  // The parent DNA. Declared as a regular dependency in package.json, so
+  // npm installs it transitively for every consumer.
+  "layers": ["@tssuite/base-dna"]
 }

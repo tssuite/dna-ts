@@ -101,7 +101,6 @@ update command) or skip with a note in the report.
 
   If the project ships its own check wrapper (via a DNA layer or a team
   CLI), use that instead.
-
 - On failure:
   - Parse the output. Typical findings: formatter diff, analyzer
     warnings, missing doc comments, unused imports.
@@ -120,7 +119,6 @@ update command) or skip with a note in the report.
   ```
 
   (or the project's test command).
-
 - On failure:
   - List failing tests individually (file, test name, error message).
   - Decide per test: is the test wrong or the code? Generate the fix
@@ -263,13 +261,11 @@ Format:
 ## Review: <branch> vs <base>
 
 **Tooling**
-
 - static checks: PASS / FAIL (fixed in phase 1: yes/no)
-- tests: PASS / FAIL (coverage: NN%, DNA test: PASS / FAIL)
+- tests:         PASS / FAIL (coverage: NN%, DNA test: PASS / FAIL)
 - dependency tightening: manifest changed (yes/no)
 
 **Statistics**
-
 - Files: N changed, +L / -L
 - Findings: X blockers, Y suggestions, Z nits
 
@@ -278,11 +274,9 @@ Format:
 ### Blockers
 
 #### B1. <short title> — `<file>:<line>`
-
 **Convention/axis**: <code-conventions.md §… | Performance | Security | …>
 **Finding**: <one to three sentences>
 **Patch**:
-
 ```diff
 - old line
 + new line
@@ -333,7 +327,6 @@ When patches were applied:
 
    Show the proposal, but do **not** commit unasked — the user confirms
    explicitly.
-
 3. **Push**: never push on your own.
 
 ---
