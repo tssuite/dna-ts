@@ -17,7 +17,11 @@ export default defineConfig(({ mode }) => {
     test: {
       globals: true,
       environment: 'node',
-      include: ['test/**/*.spec.ts', 'package-json.spec.ts'],
+      include: [
+        'test/**/*.spec.ts',
+        'test/**/*.test.ts',
+        'package-json.spec.ts',
+      ],
       exclude: ['dna/**', 'node_modules/**'],
       reporters: ['default'],
     },
