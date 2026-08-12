@@ -8,10 +8,10 @@
   `.gg/dna.json` to `dna/_dna.json`, the engine's bookkeeping to
   `dna/_generated.json`, and dotfiles below `dna/` carry the `dot-`
   prefix (`dna/.vscode/` → `dna/dot-vscode/`).
-- The parent is declared as `@tssuite/base-dna` — the name it is actually
+- The parent is declared as `@tssuite/dna-base` — the name it is actually
   published under. It read `base_dna` before, which resolves to nothing
   on npm.
-- The engine is `@tssuite/gg_dna-js`, matching the published package. The
+- The engine is `@tssuite/helix-js`, matching the published package. The
   wrapper spec imported `@tssuite/gg-dna`, which does not exist.
 
 ### Removed

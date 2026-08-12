@@ -7,6 +7,7 @@
 import { NormalizedPackageJson, readPackage } from 'read-pkg';
 import { beforeAll, describe, expect, it } from 'vitest';
 
+
 // A DNA package ships content, not code: its payload is the `dna/`
 // folder that gg_dna instantiates into consumers. These checks keep the
 // manifest honest about that.
@@ -32,7 +33,7 @@ describe('package.json', () => {
 
   it('depends on the DNA it builds upon', () => {
     expect(Object.keys(json.dependencies ?? {})).toContain(
-      '@tssuite/base-dna',
+      '@tssuite/dna-base',
     );
   });
 

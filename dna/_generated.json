@@ -10,8 +10,8 @@
       "hash": "0xd9950b133329adb6"
     },
     {
-      "name": "base-dna",
-      "package": "@tssuite/base-dna",
+      "name": "dna-base",
+      "package": "@tssuite/dna-base",
       "ecosystem": "node",
       "resolvedVersion": "1.1.0",
       "via": null,

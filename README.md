@@ -24,19 +24,19 @@ incomplete.
 ## Usage
 
 ```bash
-pnpm add -D dna-ts @tssuite/gg_dna-js
+pnpm add -D dna-ts @tssuite/helix-js
 gg_dna init
 ```
 
 The placed spec instantiates and verifies the DNA on every test run
 (base_dna is pulled in transitively). The engine runs via
-`@tssuite/gg_dna-js` — the gg_dna engine compiled to WebAssembly.
+`@tssuite/helix-js` — the gg_dna engine compiled to WebAssembly.
 
 ## Development
 
 `role: "dna"` in `dna/_dna.json`: the `dna/` folder is authored by hand.
 The repo instantiates its own DNA — run `pnpm test` after changes; commit
 first (a file the DNA would overwrite must not carry uncommitted work).
-During development `gg_localize_refs` points the `@tssuite/base-dna`
+During development `gg_localize_refs` points the `@tssuite/dna-base`
 dependency at the local base_dna checkout; the DNA config itself never
 holds paths.
