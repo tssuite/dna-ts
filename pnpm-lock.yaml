@@ -13,8 +13,8 @@ importers:
         version: 0.0.0
     devDependencies:
       '@tssuite/helix-js':
-        specifier: ^0.0.0
-        version: 0.0.0
+        specifier: ^0.0.1
+        version: 0.0.1
       '@types/node':
         specifier: ^26.2.0
         version: 26.2.0
@@ -239,8 +239,8 @@ packages:
     resolution: {integrity: sha512-mMeNevokrSh42Ubz+4pq/bdX8TXOfy/p/F3C/ex8peBNDDcY0ta6uI46mfaSUvPAP5QR3Y7Ulr0nffCGdXnH/g==}
     engines: {node: '>=22'}
 
-  '@tssuite/helix-js@0.0.0':
-    resolution: {integrity: sha512-DKVO0vLtg+4NQfvpR44PsiqtsV4tnZunVruGxhaBMBJx1u8ZOCEdE9Wkg4ZlACpGfmFurz3BnLEYQX9gsPPV/Q==}
+  '@tssuite/helix-js@0.0.1':
+    resolution: {integrity: sha512-kqIeT4PxJ09LIe1+KrWWCV89B6dMx+W29DUHFBokdlvUmXyOQkGPIRsVoJ9jJCAguI5gQYYH+3u/NUna/hHZxQ==}
     engines: {node: '>=22'}
 
   '@types/chai@5.2.3':
@@ -1183,7 +1183,7 @@ snapshots:
 
   '@tssuite/dna-base@0.0.0': {}
 
-  '@tssuite/helix-js@0.0.0': {}
+  '@tssuite/helix-js@0.0.1': {}
 
   '@types/chai@5.2.3':
     dependencies:
