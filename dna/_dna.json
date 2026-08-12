@@ -7,5 +7,5 @@
 
   // The parent DNA. Declared as a regular dependency in package.json, so
   // npm installs it transitively for every consumer.
-  "layers": ["@tssuite/base-dna"]
+  "layers": ["@tssuite/dna-base"]
 }

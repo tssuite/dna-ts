@@ -4,15 +4,16 @@
 // Use of this source code is governed by terms that can be
 // found in the LICENSE file in the root of this package.
 
-import { readFileSync, readdirSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 
+
 // dna-ts is the TypeScript ecosystem layer: it carries the delta on top
-// of base-dna, never a copy of it. These checks pin that shape down —
-// the layer once held a full materialized copy of base-dna, which made
+// of dna-base, never a copy of it. These checks pin that shape down —
+// the layer once held a full materialized copy of dna-base, which made
 // every base change invisible to consumers until it was copied again.
 
-const baseDnaRoot = 'node_modules/@tssuite/base-dna/dna';
+const baseDnaRoot = 'node_modules/@tssuite/dna-base/dna';
 
 /**
  * Lists every file below [root], as paths relative to [root].
@@ -75,7 +76,7 @@ function readJsonc(path: string): Record<string, unknown> {
 }
 
 describe('the dna-ts layer', () => {
-  it('carries only its own delta, never a copy of base-dna', () => {
+  it('carries only its own delta, never a copy of dna-base', () => {
     const base = new Set(filesBelow(baseDnaRoot));
     // `_dna.json` and `_generated.json` are the layer's own bookkeeping,
     // not inherited content — every layer carries both.
@@ -88,7 +89,7 @@ describe('the dna-ts layer', () => {
   it('joins its extensions into the inherited ones', () => {
     const overrides = readJsonc('dna/dot-vscode/extensions.overrides.json');
     // `+` appends and deduplicates; a plain `recommendations` would drop
-    // everything base-dna recommends.
+    // everything dna-base recommends.
     expect(Object.keys(overrides)).toEqual(['recommendations+']);
 
     const instance = readJsonc('.vscode/extensions.json');
@@ -111,7 +112,7 @@ describe('the dna-ts layer', () => {
     }
 
     // Objects deep-merge: the ESLint save action arrives without
-    // displacing the actions base-dna declares.
+    // displacing the actions dna-base declares.
     expect(instance['editor.codeActionsOnSave']).toEqual({
       'source.fixAll': 'always',
       'source.organizeImports': 'always',
@@ -119,9 +120,9 @@ describe('the dna-ts layer', () => {
     });
   });
 
-  it('declares base-dna as its only layer', () => {
+  it('declares dna-base as its only layer', () => {
     const config = readJsonc('dna/_dna.json');
     expect(config.role).toBe('dna');
-    expect(config.layers).toEqual(['@tssuite/base-dna']);
+    expect(config.layers).toEqual(['@tssuite/dna-base']);
   });
 });
